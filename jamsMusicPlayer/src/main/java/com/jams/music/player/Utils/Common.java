@@ -16,7 +16,6 @@
 package com.jams.music.player.Utils;
 
 import android.app.Activity;
-import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -25,14 +24,12 @@ import android.database.Cursor;
 import android.database.MergeCursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.support.multidex.MultiDexApplication;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.DisplayMetrics;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.webkit.WebView;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.android.gms.common.images.ImageManager;
@@ -66,7 +63,7 @@ import java.net.URL;
  *
  * @author Saravan Pantham
  */
-public class Common extends Application {
+public class Common extends MultiDexApplication {
 
 	//Context.
 	private Context mContext;

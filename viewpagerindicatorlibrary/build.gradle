@@ -1,18 +1,16 @@
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 20
-    buildToolsVersion "20.0.0"
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.velocityviewpagerindicator"
         minSdkVersion 4
-        targetSdkVersion 4
+        targetSdkVersion 26
     }
 
     buildTypes {
         release {
-            runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
@@ -20,5 +18,5 @@ android {
 
 dependencies {
     compile project(':velocityviewpagerlibrary')
-    compile 'com.android.support:support-v4:+'
+    compile 'com.android.support:support-v4:26.1.0'
 }
